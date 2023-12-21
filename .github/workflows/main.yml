@@ -1,0 +1,24 @@
+name: Delegated Compute Workflow
+#get log & tags information
+on:
+  workflow_dispatch:
+    inputs:
+      eventName:
+        description: "name of the received event"
+        required: true
+      organization:
+        description: "name of the organization"
+        required: true
+      issueOwner:
+        description: "name of the owner of organization"
+        required: true
+      issueRepository:
+        description: "name of the repo"
+        required: true
+      issueNumber:
+        description: "issue Number of the event"
+        required: true
+      repoCollaborators:
+        description: "repository collaborators"
+        required: true
+
